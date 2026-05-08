@@ -1,0 +1,20 @@
+TASK 4: Shortest Path from Edinburgh to Dundee
+
+Road network (miles):
+- Edinburgh to Stirling: 50
+- Edinburgh to Glasgow: 70
+- Edinburgh to Perth: 100
+- Glasgow to Stirling: 50
+- Stirling to Perth: 40
+- Perth to Dundee: 60
+
+Dijkstra's algorithm:
+
+1. Start at Edinburgh (0)
+2. Update neighbors: Stirling=50, Glasgow=70, Perth=100
+3. Pick Stirling (50), update Perth to 90 (50+40)
+4. Pick Glasgow (70), no updates
+5. Pick Perth (90), update Dundee to 150 (90+60)
+6. Pick Dundee (150) - done!
+
+Result: Edinburgh → Stirling → Perth → Dundee = 150 miles

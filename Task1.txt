@@ -1,0 +1,89 @@
+Task 1 – Depth First Search (DFS)
+
+Adjacency Lists:
+A: C B D
+B: A C E G
+C: A B D
+D: C A
+E: G F B
+F: G E
+G: F B
+
+Source vertex: A
+
+Detailed Trace of DFS:
+
+dfs(A)
+check C
+
+dfs(C)
+check A
+A already visited
+
+check B
+
+dfs(B)
+check A
+A already visited
+
+check C
+C already visited
+
+check E
+
+dfs(E)
+check G
+
+dfs(G)
+check F
+
+dfs(F)
+check G
+G already visited
+
+check E
+E already visited
+
+F done
+
+check B
+B already visited
+
+G done
+
+check F
+F already visited
+
+check B
+B already visited
+
+E done
+
+check G
+G already visited
+
+B done
+
+check D
+
+dfs(D)
+check C
+C already visited
+
+check A
+A already visited
+
+D done
+
+C done
+
+check B
+B already visited
+
+check D
+D already visited
+
+A done
+
+Final DFS Order:
+A → C → B → E → G → F → D

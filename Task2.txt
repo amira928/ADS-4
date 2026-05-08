@@ -1,0 +1,63 @@
+Task 2 – Breadth First Search (BFS)
+
+Adjacency Lists:
+A: C B D
+B: A C E G
+C: A B D
+D: C A
+E: G F B
+F: G E
+G: F B
+
+Source vertex: A
+
+Detailed Trace of BFS:
+
+Queue:
+A
+
+Removes A from the queue and puts its adjacent vertices
+C, B, and D on the queue, marking each of them.
+
+Queue:
+C B D
+
+Removes C from the queue and checks its adjacent vertices
+A, B, and D, which are already marked.
+
+Queue:
+B D
+
+Removes B from the queue and checks its adjacent vertices
+A and C, which are already marked.
+Puts adjacent vertices E and G on the queue,
+marking each of them.
+
+Queue:
+D E G
+
+Removes D from the queue and checks its adjacent vertices
+C and A, which are already marked.
+
+Queue:
+E G
+
+Removes E from the queue and checks its adjacent vertices.
+G is already marked.
+Puts adjacent vertex F on the queue and marks it.
+B is already marked.
+
+Queue:
+G F
+
+Removes G from the queue and checks its adjacent vertices
+F and B, which are already marked.
+
+Queue:
+F
+
+Removes F from the queue and checks its adjacent vertices
+G and E, which are already marked.
+
+Final BFS Order:
+A → C → B → D → E → G → F
